@@ -1,0 +1,25 @@
+<script>
+    //siongle level inheritance
+    class a{
+        myfuunction1(){
+            console.log("ABC");
+
+        }
+    }
+    class b extends a{
+
+        myfuunction2(){
+            console.log("XYZ");
+        }
+
+        myfuction1()
+        {
+            super.myfunction1();
+            console.log("class b by 1");
+        }
+    }
+    var record = new b();
+    console.log("record");
+    record.myfuunction1();
+    record.myfuunction2();
+</script>

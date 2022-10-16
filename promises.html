@@ -1,0 +1,19 @@
+<!--promise is always pending  initial state -->
+
+<script>
+    var record = new Promise((res, rej) => {
+        console.log(typeof res, typeof rej);
+        //res("task is completed")
+        rej("Task is incompleted")
+    })
+    console.log(record);
+    //then is handler 
+    record.then((value) => {
+        console.log(value);
+    }).catch((error) => {
+        console.log(error);
+    }).finally(()=>{
+        console.log("proceed for next task");
+    })
+
+</script>
